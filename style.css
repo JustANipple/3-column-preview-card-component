@@ -1,0 +1,145 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html{
+    height: 100%;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  /* Custom properties */
+  :root {
+    --primary-orange: hsl(31, 77%, 52%);
+    --primary-cyan: hsl(184, 100%, 22%);
+    --primary-dark-cyan: hsl(179, 100%, 13%);
+
+    --neutral-paragraphs-white: hsla(0, 0%, 100%, 0.75);
+    --neutral-light-gray: hsl(0, 0%, 95%);
+
+    --body-fs: 15px;
+
+    --ff-regular: 'Lexend Deca', sans-serif;
+    --ff-bold: 'Big Shoulders Display', cursive;
+  }
+
+  /* Styles */
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--body-fs);
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin: 5rem 0;
+  }
+
+  .option {
+    max-width: 305px;
+    padding: 3rem;
+    max-height: 100%;
+  }
+
+  .one {
+    background-color: var(--primary-orange);
+  }
+
+  .one button {
+    color: var(--primary-orange);
+  }
+
+  .one button:hover {
+    background-color: var(--primary-orange);
+    color: var(--neutral-light-gray);
+    border: 2px solid var(--neutral-light-gray);
+  }
+  
+  .two {
+    background-color: var(--primary-cyan);
+  }
+
+  .two button {
+    color: var(--primary-cyan)
+  }
+
+  .two button:hover {
+    background-color: var(--primary-cyan);
+    color: var(--neutral-light-gray);
+    border: 2px solid var(--neutral-light-gray);
+  }
+
+  .three {
+    background-color: var(--primary-dark-cyan);
+  }
+
+  .three button {
+    color: var(--primary-dark-cyan);
+  }
+
+  .three button:hover {
+    background-color: var(--primary-dark-cyan);
+    color: var(--neutral-light-gray);
+    border: 2px solid var(--neutral-light-gray);
+  }
+
+  .option h2 {
+    text-transform: uppercase;
+    font-family: var(--ff-bold);
+    font-size: 2.5rem;
+    color: var(--neutral-light-gray);
+    padding: 2rem 0;
+  }
+
+  .option p {
+    font-family: var(--ff-regular);
+    color: var(--neutral-paragraphs-white);
+  }
+
+  button {
+    background-color: var(--neutral-light-gray);
+    font-family: var(--ff-regular);
+    height: 3rem;
+    width: 9rem;
+    border-radius: 10rem;
+    border: 0;
+    margin: 5rem 0 0 0;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 920px) {
+    .container {
+        display: inline-block;
+    }
+
+    button {
+        margin: 2rem 0 0 0;
+    }
+  }
+
