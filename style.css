@@ -45,6 +45,7 @@
     justify-content: center;
     align-items: center;
     font-size: var(--body-fs);
+    background-color: var(--neutral-light-gray);
   }
 
   .container {
