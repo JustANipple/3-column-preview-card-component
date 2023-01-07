@@ -41,6 +41,7 @@
   /* Styles */
 
   body {
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,7 +132,7 @@
 
   @media screen and (max-width: 920px) {
     .container {
-        flex-flow: column;
+        display: inline-block;
     }
 
     button {
