@@ -65,8 +65,9 @@
     background-color: var(--primary-orange);
   }
 
-  .one button {
+  .one a {
     color: var(--primary-orange);
+    text-decoration: none;
   }
 
   .one button:hover {
@@ -80,8 +81,9 @@
     background-color: var(--primary-cyan);
   }
 
-  .two button {
-    color: var(--primary-cyan)
+  .two a {
+    color: var(--primary-cyan);
+    text-decoration: none;
   }
 
   .two button:hover {
@@ -95,8 +97,9 @@
     background-color: var(--primary-dark-cyan);
   }
 
-  .three button {
+  .three a {
     color: var(--primary-dark-cyan);
+    text-decoration: none;
   }
 
   .three button:hover {
